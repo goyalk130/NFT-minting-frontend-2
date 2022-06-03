@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./components/header/header"
+import FirstBlock from "./components/firstblock/firstblock"
+import React, { useEffect, useState } from 'react';
+import SecondBlock from './components/secondblock/secondblock';
+import ThirdBlock from './components/thirdblock/thirdblock';
+import FourthBlock from './components/fourthblock/fourthblock';
+import FifthBlock from './components/fifthblock/fifthblock';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  
+  
+  return (<div><div className='header-first-wrapper'>
+    <Header/>
+    <FirstBlock/>
+  </div>
+    
+    <SecondBlock/>
+    <ThirdBlock/>
+    <FourthBlock />
+    <FifthBlock/>    
+  </div>);
 }
 
 export default App;

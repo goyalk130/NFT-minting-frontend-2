@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Sans+Pro&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Shizuru&family=Source+Sans+Pro&family=Ubuntu:wght@300&display=swap');
+div{
+    /* border: 1px solid green; */
+}
+body,html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+}
+#root{
+    background: url("./images/back3.png");
+    background:cover  no-repeat;
+}
+.header-first-wrapper{
+    
+    background: cover no-repeat;
+}
+.main-header{
+    /* border: 1px solid red; */
+    height: 6rem;
+    display: flex;
+    padding: 20px 10px;
+
+}
+.inner-header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+}
+.name-logo{
+    padding-left: 15px;
+    width: 50%;
+    font-size: 3rem;
+font-family: 'Shizuru', cursive;
+}
+.nav-bar-list{
+    /* border: 1px solid red; */
+    height: 100%;
+    text-align: center;
+    width: 50%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav-bar-list li{
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 17px;
+    font-size: 1.2rem;
+}
+
+
+.nav-bar-list li button{
+    text-align: center;
+    margin: auto;
+    border: 0;
+    color: white;
+    font-weight: 600;
+    padding: 7px 17px;
+    border-radius: 2rem;
+    background: linear-gradient(90deg,#0e37f1,#fe19aa);
+}
+.nav-bar-list li button:hover{
+    box-shadow: 0px 0px 20px #0e37f1;
+}
+
+#root{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+color: white;
+
+}
+
+/* default anchor props */
+
+
+li a:link {
+    color: white;
+    text-decoration: none;
+}
+
+li a:visited {
+    color: white;
+}
+
+li a:focus {
+    color: white;
+}
+
+li a:hover {
+    color: #ff91d7;
+}
+
+li a:active {
+    color: white;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* first block start */
+.first-block{
+    margin: 100px 0;
+    flex-direction: row;
+    width: 100%;
+    justify-content:center;
+}
+.first-block-data{
+    flex-direction: row;
+    width: 96%;
+    height: 100%;
+    
+}
+.first-block-data p{
+    margin: 100px;
+    font-size: 1.5rem;
+}
+.first-block-data-content{
+    height: 100%;
+    width: 50%;
+}
+.first-block-data-image{
+    perspective: 1000px;
+    width: 50%;
+}
+.first-block-data-image img{
+    height: 500px;
+    border-radius: 1rem;
+    margin: 25px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.315);
+    transition: all 1s ease-in-out;
+    transform-style: preserve-3d;
+    backface-visibility: visible;
+}
+.first-block-data-image:hover img{
+    transform: rotateY(180deg);
+}
+
+.circle-button{
+    border-radius: 50%;
+    border: 0;
+    width: 3rem;
+    font-size: xx-large;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(0, 49, 49);
+}
+.circle-button div{
+    height: 3.5rem;
+}
+.circle-button:hover{
+    cursor:pointer;
+    background-color: rgb(0, 0, 0);
+}
+/* first block end */
+
+/* second block start */
+
+.second-block{
+    position: relative;
+    margin-top: 170px ;
+}
+.second-block-back-box{
+    z-index: -1;
+    height: 17rem;
+}
+.scroll-block{
+    z-index: 10;
+    margin-top: -34rem;
+    /* border: 1px solid orange; */
+    width: 100%;
+    height: 34rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nfts-wrapper{
+    /* border: 5px solid; */
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 97%;
+    overflow: hidden;
+    overflow-x: scroll;
+    scrollbar-width:none ;
+    -ms-overflow-style: none;
+    padding: 30px 0;
+}
+.nfts-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+.nft-card{
+    margin: 10px 30px;
+    width: fit-content;
+    height: 560px;
+    padding: 0;
+    box-shadow: 0px 0px 20px #0e37f1;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+.nft-text-content{
+    padding: 0 15px;
+}
+.nft-name{
+    font-family:  cursive;
+    font-weight: 500;
+    margin: 15px;
+}
+.nft-description{
+    font-family: cursive;
+    line-height: 25px;
+    font-size:1.2rem;
+    font-weight: 100;
+}
+.nfts{
+    display: inline;
+    width: fit-content;
+    height: fit-content;
+    width: 306px;
+    height: 306px;
+    padding: 20px 20px;
+    /* border:1px solid #0e37f1; */
+    background: url("./images/neon.png");
+    opacity: 0.8;
+    background-size: cover ;
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+}
+.nft-card:hover .nfts{
+    opacity: 1;
+}
+.nfts img{
+    width: 250px;
+    height: 250px;
+    transition: all 0.7s;
+    margin: 08px;
+    cursor: pointer;
+}
+
+.nfts img:hover{
+    transform: scale(1.3);
+    
+}
+
+/* seond block end */
+
+
+/* third block start */
+.third-block{
+    margin-top: 220px;
+}
+.third-block-data{
+    flex-direction: row;
+
+}
+.third-block-data div{
+    width: 50%;
+}
+.third-block-data-content{
+    flex-direction: column;
+    /* overflow: visible; */
+    
+}
+
+.time-left-mint{
+    background: none;
+    font-weight: 400;
+    font-size: 4.5rem;
+    text-align: center;
+    font-family: 'Shizuru', cursive;
+    margin-bottom: 80px;
+
+}
+.mint-button{
+    text-align: center;
+    transform: scale(1.2);
+    font-weight: 600;
+    padding: 10px 40px;
+    border-radius: 2rem;
+    font-size: 1rem;
+    background: linear-gradient(90deg,#0e38f1b7,#fe19aab6);
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.third-block:hover .mint-button{
+    box-shadow: 0px 0px 70px #0e38f1d2;
+}
+
+.third-block-data-image{
+    justify-content: center;
+    align-items: center;
+}
+.third-block-data-image img{
+    height: 500px;
+    border-radius: 1rem;
+    margin: 25px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.315);
+}
+
+/* fourth block start */
+
+.fourth-block{
+    margin-top: 150px;
+    height: 1000px;
+    padding: 0 50px;
+}
+.fourth-block-inner{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.line{
+    border:none;
+    margin-left: 50px;
+    border-radius: 10px;
+    width: 5px;
+    background-color: #0e37f1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    overflow: visible;
+}
+.moving-box{
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #748dff;
+}
+
+.roadmap-box-wrapper{
+    justify-content: center;
+    align-items: flex-end;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+.roadmap-box{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.roadmap-box div{
+    width: 95%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:  cursive;
+    font-size: 1.5rem;
+
+}
+.roadmap-box div p{
+    margin: 10px 80px;
+    border: 1px solid #fe19aa;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.roadmap-box div:hover p{
+    box-shadow: 0px 0px 20px #fe19aa;
+}
+
+/* fifth blokck */
+
+.fifth-block{
+    height: 300px;
+}
+@media (max-width: 1150px) {
+    .first-block-data{
+        flex-direction: column-reverse;
+    }
+    .first-block-data-content p{
+        margin: 40px;
+    }
+    .first-block-data-content{
+        height: 100%;
+        width: 100%;
+    }
+    .first-block-data-image{
+        width: 100%;
+    }
+    .nfts img:hover{
+        transform: scale(1);
+    }
+    .circle-button:hover{
+        cursor:pointer;
+        background-color: rgb(0, 49, 49);
+    }
+    .third-block-data{
+        flex-direction: column;
+    
+    }
+    .third-block-data div{
+        width: 100%;
+    }
+    .third-block-data-content{
+        margin:20px 0;
+    }
+}
+
+  body::-webkit-scrollbar {
+    width: 0px;
+  }
+  
